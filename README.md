@@ -30,7 +30,7 @@ This work introduces several key contributions to the field of computational neu
 - **Open-Source Software:** Creation of an open-source software package that provides a user-friendly interface for experimentalists to generate and validate CBM populations. This software does not require expertise in deep learning or programming.
 - **Theoretical Insights:** Exploration of reachability in the DICs space, providing a heuristic for selecting conductances to compensate during population generation. This contributes to the theoretical understanding of neuronal activity and degeneracy.
 
-![Pipeline for generating degenerate conductance-based models from neuronal spike times recording.](figures/main_figure.pdf)
+![Pipeline for generating degenerate conductance-based models from neuronal spike times recording.](figures/main_figure.png)
 <p align="center"><em>Figure: Pipeline for generating degenerate conductance-based models from neuronal spike times recording.</em></p>
 
 These contributions not only advance our understanding of neuronal degeneracy but also provide practical tools for experimentalists, fostering interdisciplinary collaboration and innovation in neurosciences research.

@@ -1,0 +1,13 @@
+/runs
+/data
+/logs
+/output
+
+# python gitignore
+__pycache__/
+
+
+# vscode
+.vscode/
+*/tmp/
+wandb/

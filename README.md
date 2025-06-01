@@ -1,4 +1,4 @@
-# Master Thesis – Automatic Generation of Degenerate Conductance-Based Neuron Models
+# Master Thesis – A Deep Learning Method for Fast Generation of Degenerate High-Dimensional Conductance-Based Populations from Neuronal Spike Times
 
 Deep learning pipeline for generating degenerate conductance-based neuron models from spike times using Dynamic Input Conductances (DICs). This repository contains the codebase developed as part of my master's thesis in biomedical engineering.
 

@@ -1,6 +1,6 @@
-# Master Thesis – A Deep Learning Method for Fast Generation of Degenerate High-Dimensional Conductance-Based Populations from Neuronal Spike Times
+# A Deep Learning Method for Fast Generation of Degenerate High-Dimensional Conductance-Based Populations from Neuronal Spike Times
 
-Deep learning pipeline for generating degenerate conductance-based neuron models from spike times using Dynamic Input Conductances (DICs). This repository contains the codebase developed as part of my master's thesis in biomedical engineering. The main text can be found on : https://matheo.uliege.be/handle/2268.2/23306
+Deep learning pipeline for generating degenerate conductance-based neuron models from spike times using Dynamic Input Conductances (DICs).
 
 ## 🧠 Motivation
 
@@ -11,16 +11,16 @@ This work introduces a solution that bridges that gap using a novel deep learnin
 ## 🎯 Objectives
 
 1. Create a pipeline to generate degenerate populations of CBMs that reproduce specific neuronal activities.
-
 2. Enable experimental neuroscientists to generate models without deep expertise in machine learning or numerical modeling.
-
 3. Provide a user-friendly open-source software interface to make CBM analysis accessible and practical in lab settings.
 
 ## Summary of Research Contributions
 
 **Research Question**
 
-The central research question addressed in this thesis is: "*How can we generate degenerate populations of conductance-based models (CBMs) with a target activity using only recordings of spike times?*" This question is motivated by the need to bridge the gap between experimental data, the reality of experimentalists' work, and computational modeling, facilitating the study of neuronal degeneracy.
+The central research question addressed in this work is:  
+"*How can we generate degenerate populations of conductance-based models (CBMs) with a target activity using only recordings of spike times?*"  
+This question is motivated by the need to bridge the gap between experimental data, the reality of experimentalists' work, and computational modeling, facilitating the study of neuronal degeneracy.
 
 **Main Contributions**
 
@@ -30,37 +30,31 @@ This work introduces several key contributions to the field of computational neu
 - **Open-Source Software:** Creation of an open-source software package that provides a user-friendly interface for experimentalists to generate and validate CBM populations. This software does not require expertise in deep learning or programming.
 - **Theoretical Insights:** Exploration of reachability in the DICs space, providing a heuristic for selecting conductances to compensate during population generation. This contributes to the theoretical understanding of neuronal activity and degeneracy.
 
-![Pipeline for generating degenerate conductance-based models from neuronal spike times recording.](figures/main_figure.png)
+![Pipeline for generating degenerate conductance-based models from neuronal spike times recording.](figures/main_figure.png)  
 <p align="center"><em>Figure: Pipeline for generating degenerate conductance-based models from neuronal spike times recording.</em></p>
 
-These contributions not only advance our understanding of neuronal degeneracy but also provide practical tools for experimentalists, fostering interdisciplinary collaboration and innovation in neurosciences research.
+These contributions not only advance our understanding of neuronal degeneracy but also provide practical tools for experimentalists, fostering interdisciplinary collaboration and innovation in neuroscience research.
 
 ## Related repository
-The Spike2Pop application can be found in its own reposotiry : [https://github.com/julienbrandoit/Spike2Pop---Bridging-Experimental-Neuroscience-and-Computational-Modeling](https://github.com/julienbrandoit/Spike2Pop---Bridging-Experimental-Neuroscience-and-Computational-Modeling)
+The Spike2Pop application can be found in its own repository: [https://github.com/julienbrandoit/Spike2Pop---Bridging-Experimental-Neuroscience-and-Computational-Modeling](https://github.com/julienbrandoit/Spike2Pop---Bridging-Experimental-Neuroscience-and-Computational-Modeling)
 
 ## Structure of the repository
 
-They are two main directories in this repository:
-- '[FIGURES_GENERATION](FIGURES_GENERATION)' contains the code to generate the figures of the thesis.
+There are two main directories in this repository:
+- **[FIGURES_GENERATION](FIGURES_GENERATION)** contains the code to generate the figures presented in the paper.  
+  - This folder includes one subfolder per section, with Jupyter notebooks to generate raw figures (saved in `figures`), final versions (saved in `figures/final` as PDFs), and editable versions (saved in `figures/composing` as SVGs created in Inkscape).
 
-In this folder, you will find roughly one subfolder per chapter of the thesis. Figures are generated in jupyter notebooks, and there is roughly one notebook per section of the chapter. Each folder contains a 'figures' subfolder where the generated figures are saved. We distinguish between:
-1. the raw figures generated by the code, which are saved directly in the 'figures' subfolder,
-2. the final figures, which are saved in the 'figures/final' subfolder in a pdf format.
-3. the figures have been edited in Inkscape by myself, the svg files are saved in the 'figures/composing' subfolder. 
+- **[MAIN_CODE](MAIN_CODE)** contains the main codebase, including the pipeline to generate degenerate populations of conductance-based models.  
+  - This folder also includes various `temp` directories, which contain intermediate files kept to preserve the development history and for potential future use.
 
-- '[MAIN_CODE](MAIN_CODE)' contains the main code of the thesis, including the pipeline to generate degenerate populations of conductance-based models.
+`slurm` launch scripts are also provided to run the code on a cluster.  
+Note that there is some duplication between the two main directories to simplify figure generation and code execution.
 
-In this folder there are also a lot of 'temp' folders, that saved things that are not used in the final code, but that were useful during the development of the code. They are not cleaned up to keep a trace of the development process and because they can be useful in the future.
-
-I also provide the 'slurm' launch scripts to run the code on a cluster.
-
-In practice, they are a lot of duplicated files between these two directories because it makes it easier to run the code for the figures generation.
-
-This repository is not a clean and polished codebase, it is a collection of scripts that I used to generate the figures of my thesis. For a more polished and user-friendly codebase, please refer to the Spike2Pop repository (sources folder).
+This repository is intended as a working research codebase. For a more polished and user-friendly implementation, please refer to the Spike2Pop repository (sources folder).
 
 ## Contact
 
-For questions, feedback, or collaboration inquiries, feel free to contact me:
+For questions, feedback, or collaboration inquiries, feel free to contact:
 
 **BRANDOIT Julien**  
 📧 [julienbrandoit@gmail.com](mailto:julienbrandoit@gmail.com)
